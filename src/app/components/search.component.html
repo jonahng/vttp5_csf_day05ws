@@ -12,5 +12,6 @@
 </form>
 
 @if (results$ | async; as results) {
+    <h2 [routerLink]="['/result', criteria.q]" style="color: blue;"> Results for {{criteria.q}}</h2>
     <h1>{{results | json}}</h1>
 }

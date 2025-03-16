@@ -14,7 +14,7 @@ import { BggService } from './bgg.service';
 
 const appRoutes: Routes = [
   {path: '', component: SearchComponent},
-  
+  {path: 'result/:q', component: DetailsComponent},
 
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ]
