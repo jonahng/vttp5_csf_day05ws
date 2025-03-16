@@ -12,13 +12,5 @@
 </form>
 
 @if (results$ | async; as results) {
-  @for (g of results; track g.result) {
-
-    <h3>
-      <!-- <a [routerLink]="['/game', g.result]"> {{ g.result | titlecase }}</a> -->
-    </h3>
-
-  } @empty {
-    <h2>No games found</h2>
-  }
+    <h1>{{results | json}}</h1>
 }
